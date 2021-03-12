@@ -1,1 +1,268 @@
-<h1>TEST</h1>
+<html lang="de">
+
+<head>
+    <!-- Kodierung -->
+    <meta charset="utf-8">
+    <!-- Titel der Webseite -->
+    <title>Jonas-Hamburg</title>
+    <!-- Titelbild -->
+    <link rel="shortcut icon" type="png" href="logo-192.png">
+    <!-- Autor -->
+    <meta name="author" content="Jonas K.">
+    <!-- Rechte -->
+    <meta name="copyright" content="Jonas K.">
+    <!-- Beschreibung -->
+    <meta name="description" content="Moin moin"> <!-- TO-DO -->
+    <!-- Sprache -->
+    <meta http-equiv="content-language" content="de">
+    <!-- Frabliche Anpassungen -->
+    <meta name="theme-color" content="#5ad3ff">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- CSS-Datei -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css -->
+    <link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
+    <!-- JavaScript-Datei -->
+    <script src="index.js" type="application/javascript"></script>
+    <script src="app.js" type="application/javascript"></script>
+    <script src="covid.js" type="application/ecmascript"></script>
+    <!-- https://code.jquery.com/jquery-3.5.1.min.js -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js -->
+    <script src="owl.carousel.min.js"></script>
+    <!-- Import Schriftart -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Manifest-Datei -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <noscript>
+        <div class="javascriptError">
+            <div class="javascriptMessage">
+                <img class="iconError" src="icon/error.svg">
+                <h1>JavaScript funktioniert nicht!</h1>
+                <p class="javascriptDescription">
+                    Die Internetseite hat keinen Zugriff auf JavaScript, deshalb kann die Internetseite Ihnen nicht dargestellt werden. Überprüfen Sie die Einstellungen in Ihrem Browser. Mehr Informationen finden Sie auf <a target="_blank" href="https://support.google.com/adsense/answer/12654">support.google.com</a>.
+                </p>
+            </div>
+        </div>
+    </noscript>
+    <!-- Navigationsleiste -->
+    <nav id="navigationsleiste">
+        <div class="navigationsleiste">
+            <h1 style="color: black" onclick="javascript:window.scrollTo(0, 0);">Home</h1>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#covid">Covid</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+
+            <!-- alternatives Menü (Smartphone) -->
+            <div id="menue" class="alternativeMenu" onclick="menue()" value="close">
+                <div id="MenuBox1" class="alternativeMenuBox"></div>
+                <div id="MenuBox2" class="alternativeMenuBox"></div>
+                <div id="MenuBox3" class="alternativeMenuBox"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="alternativeNav">
+        <h1 class="alternativeNavText" onclick="nav('about')">About</h1>
+        <h1 class="alternativeNavText" onclick="nav('projects')">Projekte</h1>
+        <h1 class="alternativeNavText" onclick="nav('covid')">Covid</h1>
+        <h1 class="alternativeNavText" onclick="nav('contact')">Kontakt</h1>
+        <hr>
+        <a href="datenschutz/" target="_blank" onclick="menue()">Impressum & Datenschutz</a>
+    </div>
+
+    <div class="bg_headerBox">
+        <div class="bg_header"></div>
+    </div>
+
+    <div class="content">
+
+        <div id="about">
+            <h1>Hi there, I'm Jonas.</h1>
+            <p class="aboutDescription">
+                🌱 I'm currently learning Computer Science / Software Engineering <br>
+                🧙‍♂️ Gladly solve the Rubik's Cube or other problems
+            </p>
+            <iframe width="100%" scrolling="no" src="code_about_me.html"></iframe>
+        </div>
+
+        <h1 id="projects">Projekte</h1>
+        <div class="projectBox">
+            <div class="wrapper">
+                <div class="carousel owl-carousel">
+                    <div class="card card-1">
+                        <div class="projectImage image-1"></div>
+                        <h2 class="projectName">Zeitschleife</h2>
+                        <p class="projectDescription">
+                            Mit diesem Algorithmus können Sie den Wochentag eines vergangenden oder zukünftigen Datums berechen lassen.
+                            <a href="https://zeitschleife.000webhostapp.com?user=vwa?pass=hts-8?datum=20_07_1969" target="_blank">
+                                Projekt ansehen &#x27A6;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card card-2">
+                        <div class="projectImage image-2"></div>
+                        <h2 class="projectName">Galerie</h2>
+                        <p class="projectDescription">
+                            Diese Galerie wurde in Anlehnung einer bekannten Social Media Plattform designt.
+                            <a href="https://jk-media.000webhostapp.com?user=WhatsApp&pass=free1" target="_blank">
+                                Projekt ansehen &#x27A6;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card card-3">
+                        <div class="projectImage image-3"></div>
+                        <h2 class="projectName">Bumm</h2>
+                        <p class="projectDescription">
+                            Mit diesem Multiplayer Game können Sie ihre mathematischen Fähigkeiten sowie ihre konzentration verbessern.
+                            <a href="#?projekt=" title="Projekt wird noch verlinkt">
+                                Projekt ansehen &#x27A6;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card card-4">
+                        <div class="projectImage image-4"></div>
+                        <h2 class="projectName">Tic-Tac-Toe</h2>
+                        <p class="projectDescription">
+                            Das Zweipersonen-Strategiespiel kann auf dem Terminal ausgeführt werden und ist in Java geschrieben.
+                            <a href="#?projekt=" title="Projekt wird noch verlinkt">
+                                Projekt ansehen &#x27A6;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card card-5">
+                        <div class="projectImage image-5"></div>
+                        <h2 class="projectName">Meine Homepage</h2>
+                        <p class="projectDescription">
+                            Auf dieser Webseite können Sie mehr über mich erfahren und kontakt aufnehmen.
+                            <a href="#?projekt=" title="Projekt wird noch verlinkt">
+                                Projekt ansehen &#x27A6;
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="covid">Covid-19</h1>
+            <div class="covidBox">
+                <div class="covidContent">
+                    <p class="covidDescription">
+                        Hier finden Sie alle Zahlen zur COVID-19-Pandemie zusammengefasst aus <b>Hamburg</b>. Die Tabelle wird täglich mit den aktuellen Fallzahlen des <a href="https://rki.de" target="_blank">Robert Koch-Instituts (RKI)</a> aktualisiert. Mehr Informationen erhalten Sie <a href="covid19/" target="_blank">hier</a>.
+                    </p>
+                    <table cellspacing="0">
+                        <tr>
+                            <td>Einwohner</td>
+                            <td><output id="EWZ">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>7 Tages Inzidenz pro 100.000 Einwohner</td>
+                            <td><output id="cases7_per_100k">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Bestätigte Neuinfektion</td>
+                            <td><output id="AnzFallNeu">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Gesamt Fälle</td>
+                            <td><output id="cases">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Neue Todesfälle</td>
+                            <td><output id="AnzTodesfallNeu">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Gesamt Todesfälle</td>
+                            <td><output id="deaths">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Neu Genesene</td>
+                            <td><output id="AnzGenesenNeu">Fehler</output></td>
+                        </tr>
+                        <tr>
+                            <td>Gesamt Genesene</td>
+                            <td><output id="AnzGenesen">Fehler</output></td>
+                        </tr>
+                    </table>
+                    <p>Die Daten wurden am <b><output id="last_update">#DATE</output></b> aktualisiert.</p>
+                </div>
+            </div>
+
+            <div>
+                <h1 id="contact">Kontakt</h1>
+                <div class="contactBox">
+                    <div class="boxForm" id="contactBox">
+                        <p class="contactDescription">
+                            Hier können Sie mir eine kostenlose Nachricht zu senden. Füllen Sie alle Felder aus, um die Nachricht erfolgreich abzusenden.
+                        </p>
+                        <form action="https://formspree.io/f/mleoqner" target="answer" onsubmit="send()" method="POST">
+                            <label>
+                                <input placeholder="Vor -und Nachname" name="name" type="text" autocomplete="off" required>
+                            </label>
+                            <label>
+                                <input type="email" placeholder="E-Mail-Adresse" type="email" autocomplete="off" name="_replyto" required>
+                            </label>
+                            <label>
+                                <input placeholder="Betreff" name="betreff" type="text" autocomplete="off" required required>
+                            </label>
+                            <label>
+                                <textarea placeholder="Nachricht" name="message" required></textarea>
+                            </label>
+                            <button type="submit">Senden</button>
+                        </form>
+                    </div>
+                    <div id="answer">
+                        <div class="hiddenBox"></div>
+                        <iframe name="answer" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div style="max-width: 1500px;margin: auto;">
+                    <a class="copyright">2021 Jonas K.</a>
+                    <a class="impressumFooter" href="datenschutz/" target="_blank">Impressum & Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                700: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
