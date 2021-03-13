@@ -22,7 +22,8 @@ a {
     color: #333;
 }
 
-.projectBox a, a[target="_blank"] {
+.projectBox a,
+a[target="_blank"] {
     text-decoration: none;
     color: var(--blueTwo);
 }
@@ -307,30 +308,36 @@ iframe[src="code_about_me.html"] {
 }
 
 .image-1 {
-    background: url('/image/zeitschleife.png');
+    background: url('/image/goToSchool.png');
     background-size: cover;
     background-position: center;
 }
 
 .image-2 {
-    background: url('/image/galerie.png');
+    background: url('/image/zeitschleife.png');
     background-size: cover;
     background-position: center;
 }
 
 .image-3 {
-    background: url('/image/bumm.png');
+    background: url('/image/galerie.png');
     background-size: cover;
     background-position: center;
 }
 
 .image-4 {
-    background: url('/image/tictactoe.png');
+    background: url('/image/bumm.png');
     background-size: cover;
     background-position: center;
 }
 
 .image-5 {
+    background: url('/image/tictactoe.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-6 {
     background: url('/image/homepage.png');
     background-size: cover;
     background-position: center;
@@ -376,11 +383,11 @@ iframe[src="code_about_me.html"] {
         width: 30px;
         margin: 0 5px;
     }
-    
+
     .projectBox {
         min-height: 500px;
     }
-    
+
 }
 
 /**/
@@ -400,9 +407,11 @@ iframe[src="code_about_me.html"] {
 .covidContent table {
     width: 100%;
     font-size: 20px;
-     border: 2px solid #333;
+    border: 2px solid #333;
 }
-.covidContent td, tr {
+
+.covidContent td,
+tr {
     border: 1px solid #333;
     padding: 10px;
 }
@@ -432,7 +441,7 @@ iframe[src="code_about_me.html"] {
     width: 100%;
     font-size: 20px;
     min-height: 600px;
-    background: rgb(225,232,237);
+    background: rgb(225, 232, 237);
     padding: 20px 5px 5px 5px;
 }
 
