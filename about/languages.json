@@ -1,0 +1,52 @@
+{
+    "languages": [
+        {
+            "name": "Java",
+            "source": "https://images.app.goo.gl/nEQ7sN6Xy3af6phx9",
+            "image": "/images/languages/java.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Java_(Programmiersprache)"
+        },
+        {
+            "name": "C/C++",
+            "source": "https://images.app.goo.gl/611dKomPe6P3478R8",
+            "image": "/images/languages/C.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/C_(Programmiersprache)"
+        },
+        {
+            "name": "Haskell",
+            "source": "https://images.app.goo.gl/n3CVzTweZqpyYCJC8",
+            "image": "/images/languages/Haskell.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Haskell_(Programmiersprache)"
+        },
+        {
+            "name": "SQL",
+            "source": "https://images.app.goo.gl/VqxYD8x2MoHqiJ2q9",
+            "image": "/images/languages/SQL.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/SQL"
+        },
+        {
+            "name": "HTML",
+            "source": "https://images.app.goo.gl/NPhEkN5oFtvzoBsc8",
+            "image": "/images/languages/HTML5.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/HTML"
+        },
+        {
+            "name": "CSS",
+            "source": "https://images.app.goo.gl/w3R5qeNdJ7DRevfx7",
+            "image": "/images/languages/CSS3.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Cascading%20Style%20Sheets"
+        },
+        {
+            "name": "JavaScript",
+            "source": "https://images.app.goo.gl/AaUa7mdNgKwhuD989",
+            "image": "/images/languages/JavaScript.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/JavaScript"
+        },
+        {
+            "name": "Assembler",
+            "source": "https://www.flaticon.com/premium-icon/binary-code_2115955?term=code&page=1&position=1&page=1&position=1&related_id=2115955&origin=search#",
+            "image": "/images/languages/Assembler.png",
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Assemblersprache"
+        }
+    ]
+}
