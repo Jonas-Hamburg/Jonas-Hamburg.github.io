@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Kodierung -->
+    <meta charset="utf-8">
+    <!-- Titel der Webseite -->
+    <title>Homepage • Jonas-Hamburg</title>
+    <!-- Titelbild -->
+    <link rel="shortcut icon" type="png" href="/images/logo/192.png">
+    <!-- Autor -->
+    <meta name="author" content="Jonas K.">
+    <!-- Rechte -->
+    <meta name="copyright" content="Jonas K.">
+    <!-- Beschreibung (circa 100 und 145 Zeichen) -->
+    <meta name="description" content="Hallo zusammen, ich bin Jonas. Ich lerne gerade Informatik, löse gerne den Zauberwürfel oder andere Probleme. Hier bleibst du auf dem Laufenden.">
+    <!-- Keywords -->
+    <meta name="keywords" content="Jonas, Jonas K., Jonas-Hamburg, Hamburg, Jonas-Hamburg github, github, Computer science, Software engineering, Rubik's Cube, Kitesurfing, Snowboarding, play guitar, Informatik, Student, About me, languages, sprachen, projekte, projects, own small projects, kontaktformular">
+    <!-- Links -->
+    <meta name="robots" content="index,follow">
+    <!-- Sprache -->
+    <meta http-equiv="content-language" content="de">
+    <!-- Frabliche Anpassungen -->
+    <meta name="theme-color" content="#5ad3ff">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- CSS-Datei -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Import Schriftart -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="index.js" type="application/javascript"></script>
+    <!-- Progressive Web App (PWA) -->
+    <!-- Manifest-Datei -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Service Worker -->
+    <script src="app.js" type="application/javascript"></script>
+
+    <!-- -- -- -- -- -- -- -- -- -- -->
+
+    <!-- Content 
+    <link rel="stylesheet" type="text/css" href="content.css"> -->
+    <!-- Header -->
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <!-- About -->
+    <link rel="stylesheet" type="text/css" href="/about/index.css">
+    <script src="/about/index.js"></script>
+    <!-- Projects -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css -->
+    <link rel="stylesheet" type="text/css" href="/projects/index.css">
+    <link rel="stylesheet" type="text/css" href="/projects/owl.carousel.min.css">
+    <script src="/projects/index.js" type="application/javascript"></script>
+    <!-- https://code.jquery.com/jquery-3.5.1.min.js -->
+    <script src="/projects/jquery-3.5.1.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js -->
+    <script src="/projects/owl.carousel.min.js"></script>
+    <!-- Contact -->
+    <link rel="stylesheet" type="text/css" href="/contact/index.css">
+</head>
+
+<body>    
+    <!-- Content  -->
+    <div class="content">
+
+        <!--    Header    -->
+        <header>
+            <div class="bg">
+                <div class="image"></div>
+            </div>
+            <div class="name">
+                <h1 lang="de">Jonas K.</h1>
+            </div>
+        </header>
+
+        <!--    About    -->
+        <div class="about">
+            <div class="container description" lang="en">
+                <h2>About me</h2>
+                <hr>
+                <p class="statement">
+                    🌱 I'm currently learning Computer science / Software engineering <br>
+                    🧙‍♂️ Gladly solve the Rubik's Cube or other problems <br>
+                    ⚡ Hobbies: Kitesurfing, Snowboarding, play guitar and more
+                </p>
+            </div>
+            <div class="container languages">
+                <h2 lang="en">Languages</h2>
+                <hr>
+                <div id="pinboard" lang="de"></div>
+            </div>
+        </div>
+
+        <!--    Projects    -->
+        <div class="projects">
+            <h2 class="title">Own small projects</h2>
+            <hr>
+            <div class="projectBox">
+                <div class="wrapper">
+                    <div id="carousel" class="carousel owl-carousel"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--    Contact    -->
+        <h2>Kontaktformular</h2>
+        <hr>
+        <div class="contact">
+            <div class="description">
+                <div class="image"></div>
+                <p>
+                    Die in das Kontaktformular eingetragenen Informationen werden mit dem Dienst von
+                    <a href="https://formspree.io" target="_blank">Formspree</a>
+                    übermittelt.
+                </p>
+            </div>
+            <div class="contactForm" lang="en">
+                <form action="https://formspree.io/f/mleoqner" target="answer" onsubmit="send()" method="POST">
+                    <label for="name">Full name</label>
+                    <input lang="de" id="name" name="name" type="text" placeholder="" autocomplete="off" required>
+                    <label for="email">Email</label>
+                    <input lang="de" id="email" name="email" type="email" placeholder="" autocomplete="off" required>
+                    <label for="subject">Subject</label>
+                    <input lang="de" id="subject" name="subject" type="text" placeholder="" autocomplete="off" required>
+                    <label for="message">Message</label>
+                    <textarea maxlength="2000" lang="de" id="message" name="message" placeholder="" required></textarea>
+                    <button id="check" type="submit">send</button>
+                    <p style="font-size: 10px">
+                        powered by <b>Formspree.io</b>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
