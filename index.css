@@ -1,0 +1,63 @@
+:root {
+    --transparent: rgba(0, 0, 0, 0);
+    --black: #333333;
+    --white: #f0f2f5;
+    --lightBlue: #f0f8ff;
+    --blue: #1e90ff;
+    --font: 'Varela Round';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--black);
+    background: var(--white);
+    overflow-x: hidden;
+    user-select: none;
+    filter: saturate(0.)
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.content {
+    position: relative;
+    display: block;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: var(--lightBlue);
+    box-shadow: -5px 25px 20px 2px rgba(51, 51, 51, 0.2);
+}
+
+@counter-style repeating-emoji {
+  system: cyclic;
+  symbols: "\1F331" "\1F9D9" "\1F4AA";
+  suffix: " ";
+}
