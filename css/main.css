@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Varela%20Round&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=swap);
+
+:root {
+    --font: 'Varela Round', sans-serif;
+    --icon: 'Material Symbols Outlined';
+
+    --background: #000;
+    --primary: #202124;
+    --secondary: #333;
+    --onPrimary: #f0faff;
+    --onSecondary: #f0faff;
+    --accent: #33a3ea;
+    --secondaryAccent: #596167;
+    --transparent: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar { width: 8px }
+
+::-webkit-scrollbar-track { background: var(--background) }
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a[target="_blank"]::after {
+    font-family: var(--icon);
+    content: '\e89e';
+    vertical-align: middle;
+}
+
+hr { border-color: var(--secondaryAccent) }
+
+p { text-align: justify }
+
+body {
+    font-family: var(--font);
+    color: var(--onPrimary);
+    background-color: var(--background);
+    overflow-x: hidden;
+    user-select: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 80px auto;
+    background: var(--primary);
+    max-width: 735px;
+    border-radius: 10px;
+    padding: 0 25px;
+    overflow: hidden;
+}
+
+section > * { display: block }
+
+header {
+    /* The padding of the parent element is subtracted */
+    width: calc(100% + 2 * 25px);
+    margin-left: -25px;
+    margin-bottom: 15px;
+}
+
+/* Banner */
+header div:first-child {
+    width: 100%;
+    height: 290px;
+    background-color: var(--secondary);
+    overflow: hidden;
+}
+
+header div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Logo */
+header div:nth-child(2) {
+    height: 120px;
+    width: 120px;
+    margin: -100px auto 0 auto;
+}
+
+header div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--primary);
+    border-radius: 100%;
+}
+
+header > h1 { text-align: center }
+
+header a {
+    display: block;
+    font-size: 17px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+header a span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-image: url(/images/logo/GitHub-Mark-Light-64px.png);
+}
+
+
+about { margin: 50px 0px 15px 0px }
+
+about > div {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+}
+
+about div p { font-size: 18px }
+
+
+contact {
+    display: block;
+    padding: .1px 10px 20px 10px;
+    margin: 55px 0;
+    border-radius: 5px;
+    background-color: var(--secondary);
+}
+
+form input,
+form textarea {
+    font-family: var(--font);
+    font-size: 18px;
+    padding: 10px;
+    color: var(--onSecondary);
+    background-color: #171717;
+    width: calc(100% - 2 * 15px);
+    border-radius: 5px;
+    border: 1px solid var(--secondaryAccent);
+    resize: none;
+    outline: none;
+}
+
+form textarea { height: 150px }
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form button {
+    font-family: var(--font);
+    cursor: pointer;
+    background: linear-gradient(180deg,#1e90ff, rgb(15, 128, 241));
+    background-color: var(--accent);
+    color: var(--onPrimary);
+    border: 1px solid var(--black);
+    font-size: 18px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 735px) {
+
+    section {
+        margin: 0 auto;
+        border-radius: 0;
+        padding: 0 15px 15px 15px;
+    }
+
+}
