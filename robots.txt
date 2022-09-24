@@ -1,0 +1,4 @@
+# robots.txt für jonas-hamburg.github.io
+
+User-agent: *
+Disallow:
