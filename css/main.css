@@ -7,6 +7,7 @@
 
     --background: #000;
     --primary: #202124;
+    --darkerPrimary: #171717;
     --secondary: #333;
     --onPrimary: #f0faff;
     --onSecondary: #f0faff;
@@ -24,11 +25,9 @@
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary);
-}
+::-webkit-scrollbar-thumb:hover { background: var(--secondary) }
 
-a[target="_blank"] {
+a {
     text-decoration: none;
     color: var(--accent);
 }
@@ -43,13 +42,18 @@ hr { border-color: var(--secondaryAccent) }
 
 p { text-align: justify }
 
+.icon {
+    font-family: var(--icon);
+    vertical-align: middle;
+}
+
 body {
     font-family: var(--font);
     color: var(--onPrimary);
     background-color: var(--background);
     overflow-x: hidden;
-    user-select: none;
     scroll-behavior: smooth;
+    hyphens: auto;
     margin: 0;
     padding: 0;
 }
@@ -70,6 +74,14 @@ header {
     width: calc(100% + 2 * 25px);
     margin-left: -25px;
     margin-bottom: 15px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Banner */
@@ -146,7 +158,7 @@ form textarea {
     font-size: 18px;
     padding: 10px;
     color: var(--onSecondary);
-    background-color: #171717;
+    background-color: var(--darkerPrimary);
     width: calc(100% - 2 * 15px);
     border-radius: 5px;
     border: 1px solid var(--secondaryAccent);
@@ -173,6 +185,8 @@ form button {
     width: 100px;
     border-radius: 5px;
 }
+
+form > p:last-child { font-size: 10px }
 
 footer {
     text-align: center;
