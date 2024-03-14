@@ -1,4 +1,4 @@
-# Homepage
+# Homepage (Plain Vanilla)
 
 Dies ist eine einfache Single-Page-Webanwendung, die mit grundlegenden Webtechnologien (HTML, CSS und JavaScript) implementiert wurde. Zudem implementiert die Webseite Bestandteile einer Progressive Web App.
 
