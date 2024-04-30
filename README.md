@@ -2,8 +2,6 @@
 
 Dies ist eine einfache Single-Page-Webanwendung, die mit grundlegenden Webtechnologien (HTML, CSS und JavaScript) implementiert wurde. Zudem implementiert die Webseite Bestandteile einer Progressive Web App.
 
-Die Webseite können Sie unter https://jonas-hamburg.github.io erreichen.
-
 ## Die Struktur im Überblick - Was finde ich wo?
 
 ```text
